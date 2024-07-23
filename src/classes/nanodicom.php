@@ -11,11 +11,10 @@
  */
 
 // Set the full path to the current folder
-define('NANODICOMROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
-define('NANODICOMCOREPATH', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR.'nanodicom'.DIRECTORY_SEPARATOR);
+const NANODICOMROOT = "/";
 
 // Require the core class
-require_once NANODICOMCOREPATH.'core.php';
+require_once "core.php";
 
 /**
  * abstract Nanodicom class.
@@ -28,4 +27,7 @@ require_once NANODICOMCOREPATH.'core.php';
  * @copyright  (c) 2010-2011
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-license
  */
+
+namespace elievischel\Nanodicom;
+
 abstract class Nanodicom extends Nanodicom_Core {}

@@ -1,14 +1,7 @@
 <?php
-/**
- * nanodicom/exception.php file
- *
- * @package    Nanodicom
- * @category   Base
- * @author     Nano Documet <nanodocumet@gmail.com>
- * @version	   1.3.1
- * @copyright  (c) 2010-2011
- * @license    http://www.opensource.org/licenses/mit-license.php MIT-license
- */
+
+namespace elievischel\Nanodicom;
+
 
 /**
  * Nanodicom_Extension class.
