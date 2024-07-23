@@ -3,8 +3,8 @@
     "description": "PHP DICOM for LARAVEL",
     "type": "composer-plugin",
     "license": "MIT",
-    "keywords": ["http", "discovery", "client", "adapter", "message", "factory", "psr7", "psr17"],
-    "homepage": "http://php-http.org",
+    "keywords": ["laravel", "dicom"],
+    "homepage": "http://vischel.com",
     "authors": [
         {
             "name": "elie vischel",
@@ -21,18 +21,6 @@
         "psr-4": {
             "Http\\Discovery\\": "src/"
         },
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "spec\\Http\\Discovery\\": "spec/"
-        }
-    },
-    "scripts": {
-        "test": [
-            "vendor/bin/phpspec run",
-            "vendor/bin/simple-phpunit --group NothingInstalled"
-        ],
-        "test-ci": "vendor/bin/phpspec run -c phpspec.ci.yml"
     },
     "prefer-stable": true,
     "minimum-stability": "beta"
