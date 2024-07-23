@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "Http\\Discovery\\": "src/"
-        },
+        }
     },
     "prefer-stable": true,
     "minimum-stability": "beta"
