@@ -4,7 +4,6 @@
     "type": "composer-plugin",
     "license": "MIT",
     "keywords": ["laravel", "dicom"],
-    "homepage": "http://vischel.com",
     "authors": [
         {
             "name": "elie vischel",
@@ -14,8 +13,6 @@
     "require": {
         "php": "^7.1 || ^8.0",
         "composer-plugin-api": "^1.0|^2.0"
-    },
-    "require-dev": {
     },
     "autoload": {
         "psr-4": {
