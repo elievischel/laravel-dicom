@@ -1,6 +1,6 @@
 <?php
 
-namespace elievischel\Nanodicom;
+namespace dicom\classes;
 
 abstract class Nanodicom_Core {
 

@@ -1,5 +1,5 @@
 <?php
-namespace elievischel\Nanodicom;
+namespace dicom\classes;
 
  /**
  * Nanodicom_Dictionary class.

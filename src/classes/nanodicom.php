@@ -28,6 +28,6 @@ require_once "core.php";
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-license
  */
 
-namespace elievischel\Nanodicom;
+namespace dicom\classes;
 
 abstract class Nanodicom extends Nanodicom_Core {}
