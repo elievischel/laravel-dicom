@@ -1,7 +1,7 @@
 {
     "name": "elievischel/laravel-dicom",
     "description": "PHP DICOM for LARAVEL",
-    "type": "composer-plugin",
+    "type": "project",
     "license": "MIT",
     "keywords": ["laravel", "dicom"],
     "authors": [
