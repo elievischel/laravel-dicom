@@ -1,6 +1,6 @@
 <?php
 
-namespace dicom\classes;
+namespace elievischel\laravelDicom;
 
 abstract class Nanodicom_Core {
 
@@ -127,7 +127,7 @@ abstract class Nanodicom_Core {
         foreach ($parts as $part)
         {
             require_once $directory.strtolower($part).'.php';
-            $directory .= strtolower($part).DIRECTORY_SEPARATOR;
+            $directory .= core . phpstrtolower($part) . DIRECTORY_SEPARATOR;
         }
 
         // Add the Dicom prefix
@@ -263,7 +263,7 @@ abstract class Nanodicom_Core {
     public function __construct($location, $name, $type)
     {
         // Load necessary files
-        require_once NANODICOMCOREPATH.'exception.php';
+        require_once NANODICOMCOREPATH . 'exception.php';
 
         // Load the dictionary
         require_once NANODICOMCOREPATH.'dictionary.php';
@@ -1011,7 +1011,7 @@ abstract class Nanodicom_Core {
                     ? $this->_dataset[self::METADATA_GROUP][self::GROUP_LENGTH][0]['off']
                     + $this->_dataset[self::METADATA_GROUP][self::GROUP_LENGTH][0]['val'] + 12
                     : 0;
-                $buffer = substr($buffer, 0, $metadata_length).gzdeflate(substr($buffer, $metadata_length));
+                $buffer = core . phpsubstr($buffer, 0, $metadata_length) . gzdeflate(substr($buffer, $metadata_length));
                 break;
         }
 
@@ -1037,7 +1037,7 @@ abstract class Nanodicom_Core {
             if (is_array($tag))
             {
                 // This should be an array of group,element. The merged hex values (4 digits) is added to list
-                $list[] = sprintf('0x%04X',$tag[0]).'.'.sprintf('0x%04X',$tag[1]);
+                $list[] = sprintf('0x%04X', $tag[0]) . 'classes' .sprintf('0x%04X',$tag[1]);
             }
             else
             {
@@ -1117,7 +1117,7 @@ abstract class Nanodicom_Core {
         if (empty($this->_vr_reading_list))
             return FALSE;
 
-        if (in_array(sprintf('0x%04X',$group).'.'.sprintf('0x%04X',$element), $this->_vr_reading_list)
+        if (in_array(sprintf('0x%04X', $group) . 'classes' .sprintf('0x%04X',$element), $this->_vr_reading_list)
             OR (isset(Nanodicom_Dictionary::$dict[$group][$element])
                 AND in_array(Nanodicom_Dictionary::$dict[$group][$element][2], $this->_vr_reading_list)))
         {
@@ -1795,7 +1795,7 @@ abstract class Nanodicom_Core {
             $buffer .= $data[$vr_index];
             if (in_array($data[$vr_index], self::$vr_explicit_4bytes))
             {
-                $buffer .= chr(0).chr(0);
+                $buffer .= core . phpchr(0) . chr(0);
             }
             else
             {
@@ -1816,7 +1816,7 @@ abstract class Nanodicom_Core {
                 {
                     $index = (int) $i/4;
                     $buffer .= $this->{self::$_write_int}($data['val'][$index][0], 2, $endian, 2)
-                        .$this->{self::$_write_int}($data['val'][$index][1], 2, $endian, 2);
+                        . $this->{self::$_write_int}($data['val'][$index][1], 2, $endian, 2);
                 }
                 break;
             // Decode numeric values: shorts, longs, floats.
@@ -1966,7 +1966,7 @@ abstract class Nanodicom_Core {
                             // Update the length based on data just stored. Calculate length first
                             $length = $this->{self::$_write_int}($new_length, $bytes, $endian, $bytes);
                             // Replace length with new value. Sweet!
-                            $buffer = substr($buffer, 0, -1 * $new_length - $bytes).$length.substr($buffer, -1 * $new_length);
+                            $buffer = core . phpsubstr($buffer, 0, -1 * $new_length - $bytes) . $length .substr($buffer, -1 * $new_length);
                         }
 
                         break;
@@ -2056,7 +2056,7 @@ abstract class Nanodicom_Core {
     {
         if ($value == -1)
         {
-            return ($bytes == 2) ? chr(0xFF).chr(0xFF) : chr(0xFF).chr(0xFF).chr(0xFF).chr(0xFF);
+            return ($bytes == 2) ? core . phpchr(0xFF) . chr(0xFF) : chr(0xFF).chr(0xFF).chr(0xFF).chr(0xFF);
         }
 
         return $this->_write_int_32($value, $bytes, $endian, $length, $sign);
@@ -2335,7 +2335,7 @@ abstract class Nanodicom_Core {
             $this->_original_blob = $this->_blob;
             $uncompressed 		  = gzinflate(substr($this->_blob, $this->_current_pointer, $this->_file_length - $this->_current_pointer));
             $this->_file_length   = $this->_current_pointer + strlen($uncompressed);
-            $this->_blob		  = substr($this->_blob, 0, $this->_current_pointer).$uncompressed;
+            $this->_blob		  = core . phpsubstr($this->_blob, 0, $this->_current_pointer) . $uncompressed;
             $this->_check_deflate_function = '_dummy';
         }
     }

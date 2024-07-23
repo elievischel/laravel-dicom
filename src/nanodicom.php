@@ -1,5 +1,6 @@
 <?php
 
+namespace elievischel\laravelDicom;
 
 // Set the full path to the current folder
 const NANODICOMROOT = "/";
@@ -16,6 +17,5 @@ const NANODICOMROOT = "/";
  * @license    http://www.opensource.org/licenses/mit-license.php MIT-license
  */
 
-namespace dicom\classes;
 
 abstract class Nanodicom extends Nanodicom_Core {}

@@ -1,5 +1,5 @@
 <?php
-namespace dicom\classes;
+namespace elievischel\laravelDicom;
 
  /**
  * Nanodicom_Dictionary class.

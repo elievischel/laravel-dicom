@@ -1,6 +1,6 @@
 <?php
 
-namespace dicom\classes;
+namespace elievischel\laravelDicom;
 
 
 /**
