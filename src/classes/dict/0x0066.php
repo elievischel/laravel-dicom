@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0066
 Nanodicom_Dictionary::$dict[0x0066][0x0001] = array('UL', ' 1', 'NumberOfSurfaces');

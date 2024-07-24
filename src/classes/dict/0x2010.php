@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x2010
 Nanodicom_Dictionary::$dict[0x2010][0x0010] = array('ST', ' 1', 'ImageDisplayFormat');

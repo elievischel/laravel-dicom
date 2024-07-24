@@ -1,6 +1,12 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace laravelDicom\tools;
+
+use laravelDicom\Nanodicom;
+namespace laravelDicom\dict;
+use laravelDicom\Nanodicom_Dictionary;
+use function laravelDicom\phpsprintf;
+use const laravelDicom\dumper;
 
 /**
  * Dicom_Dumper class.

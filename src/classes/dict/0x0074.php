@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0074
 Nanodicom_Dictionary::$dict[0x0074][0x1000] = array('CS', ' 1', 'UnifiedProcedureStepState');

@@ -1,6 +1,8 @@
 <?php
 // Group 0x0002
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 Nanodicom_Dictionary::$dict[0x0002][0x0000] = array('UL', '1', 'MetaElementGroupLength');
 Nanodicom_Dictionary::$dict[0x0002][0x0001] = array('OB', '1', 'FileMetaInformationVersion');

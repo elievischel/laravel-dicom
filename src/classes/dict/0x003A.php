@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x003A
 Nanodicom_Dictionary::$dict[0x003A][0x0004] = array('CS', ' 1', 'WaveformOriginality');

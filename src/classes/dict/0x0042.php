@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0042
 Nanodicom_Dictionary::$dict[0x0042][0x0010] = array('ST', ' 1', 'DocumentTitle');

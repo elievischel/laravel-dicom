@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x4008
 Nanodicom_Dictionary::$dict[0x4008][0x0040] = array('SH', ' 1 ', 'ResultsID', 'RET');

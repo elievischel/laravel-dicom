@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0022
 Nanodicom_Dictionary::$dict[0x0022][0x0001] = array('US', ' 1', 'LightPathFilterPassThroughWavelength');

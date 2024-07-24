@@ -1,6 +1,8 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace laravelDicom\tools;
+
+use laravelDicom\Nanodicom;
 
 /**
  * Dicom_Simple class.

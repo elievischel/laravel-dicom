@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x5400
 Nanodicom_Dictionary::$dict[0x5400][0x0100] = array('SQ', ' 1', 'WaveformSequence');

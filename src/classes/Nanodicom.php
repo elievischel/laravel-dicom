@@ -1,6 +1,6 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace laravelDicom;
 
 /**
  * abstract Nanodicom class.

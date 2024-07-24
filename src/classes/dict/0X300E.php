@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x300E
 Nanodicom_Dictionary::$dict[0x300E][0x0002] = array('CS', ' 1', 'ApprovalStatus');

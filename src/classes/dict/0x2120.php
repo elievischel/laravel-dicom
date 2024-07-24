@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x2120
 Nanodicom_Dictionary::$dict[0x2120][0x0010] = array('CS', ' 1 ', 'QueueStatus', 'RET');

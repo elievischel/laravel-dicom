@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0062
 Nanodicom_Dictionary::$dict[0x0062][0x0001] = array('CS', ' 1', 'SegmentationType');

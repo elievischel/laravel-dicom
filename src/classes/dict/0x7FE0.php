@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x7FE0
 Nanodicom_Dictionary::$dict[0x7FE0][0x0000] = array('UL', '1', 'PixelDataGroupLength');

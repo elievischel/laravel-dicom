@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x300C
 Nanodicom_Dictionary::$dict[0x300C][0x0002] = array('SQ', ' 1', 'ReferencedRTPlanSequence');

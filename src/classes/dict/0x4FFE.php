@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x4FFE
 Nanodicom_Dictionary::$dict[0x4FFE][0x0001] = array('SQ', ' 1', 'MACParametersSequence');

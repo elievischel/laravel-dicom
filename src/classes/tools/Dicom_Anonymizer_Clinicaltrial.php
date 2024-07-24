@@ -1,6 +1,6 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace laravelDicom\tools;
 
 /**
  * Dicom_Anonymizer_Clinicaltrial class.

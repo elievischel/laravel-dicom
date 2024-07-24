@@ -1,6 +1,19 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace laravelDicom\tools;
+
+use laravelDicom\Gmagick;
+use laravelDicom\GmagickDraw;
+use laravelDicom\GmagickPixel;
+use laravelDicom\Imagick;
+use laravelDicom\ImagickDraw;
+use laravelDicom\ImagickPixel;
+use laravelDicom\integet;
+use laravelDicom\Nanodicom;
+use laravelDicom\Nanodicom_Exception;
+use function laravelDicom\phprealpath;
+use function laravelDicom\phpsubstr;
+use const laravelDicom\pixeler;
 
 /**
  * Dicom_Pixeler class.

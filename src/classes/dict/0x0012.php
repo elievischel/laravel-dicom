@@ -1,6 +1,8 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+namespace laravelDicom\dict;
+
+use laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0012
 Nanodicom_Dictionary::$dict[0x0012][0x0010] = array('LO', ' 1', 'ClinicalTrialSponsorName');
