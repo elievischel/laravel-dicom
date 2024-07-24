@@ -356,7 +356,7 @@ class Dicom_Pixeler extends Nanodicom {
 						else
 						{
 							// It is a real Item
-							$dir = realpath(dirname($this->_location)).DIRECTORY_SEPARATOR;
+							$dir = pixeler . phprealpath(dirname($this->_location)) . DIRECTORY_SEPARATOR;
 							$file = basename($this->_location);
 
 							if ( ! isset($data['done'])) 
@@ -457,7 +457,7 @@ class Dicom_Pixeler extends Nanodicom {
 						$part = '';
 						foreach ($temp[$count] as $segment)
 						{
-							$part = substr($segment, $i, 1) . $part;
+							$part = pixeler . phpsubstr($segment, $i, 1) . $part;
 						}
 						$blob .= $part;
 					}

@@ -81,7 +81,7 @@ class Dicom_Anonymizer extends Nanodicom {
 				// assignment = the new replacement value for the given tag element and found value combined
 				list ($group, $element, $value, $assignment) = $entry;
 				$value = (self::$case == 'insensitive') ? strtolower($value) : $value;
-				$name  = sprintf('0x%04X',$group).'.'.sprintf('0x%04X',$element);
+				$name  = sprintf('0x%04X', $group) . 'tools' .sprintf('0x%04X',$element);
 				$this->_map[$name][$value] = $assignment;
 			}
 		}
@@ -169,7 +169,7 @@ class Dicom_Anonymizer extends Nanodicom {
 		// Check if we are doing a case insensitive comparison
 		$value = (self::$case == 'insensitive') ? strtolower($value) : $value;
 		
-		$name  = sprintf('0x%04X',$group).'.'.sprintf('0x%04X',$element);
+		$name  = sprintf('0x%04X', $group) . 'tools' .sprintf('0x%04X',$element);
 
 		// A mapping was found. Return it
 		if (isset($this->_map[$name][$value]))

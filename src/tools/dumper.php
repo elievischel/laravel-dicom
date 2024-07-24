@@ -217,7 +217,7 @@ class Dicom_Dumper extends Nanodicom {
 				default		: $string = trim($element[$column]);
 				break;
 			}
-			$out .= sprintf($values[0], $string).$values[1];
+			$out .= dumper . phpsprintf($values[0], $string) . $values[1];
 		}
 		return $out;
 	}
