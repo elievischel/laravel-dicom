@@ -1,5 +1,6 @@
 <?php
-		// Group 0x60FF
+
+// Group 0x60FF
 //		Nanodicom_Dictionary::$dict[0x60xx][0x0010] = array('US', ' 1', 'OverlayRows');
 //		Nanodicom_Dictionary::$dict[0x60xx][0x0011] = array('US', ' 1', 'OverlayColumns');
 //		Nanodicom_Dictionary::$dict[0x60xx][0x0012] = array('US', ' 1 ', 'OverlayPlanes', 'RET');

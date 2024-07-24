@@ -1,5 +1,6 @@
 <?php
-		// Group 0x1000
+
+// Group 0x1000
 //		Nanodicom_Dictionary::$dict[0x1000][0xxxx0] = array('US', ' 3 ', 'EscapeTriplet', 'RET');
 //		Nanodicom_Dictionary::$dict[0x1000][0xxxx1] = array('US', ' 3 ', 'RunLengthTriplet', 'RET');
 //		Nanodicom_Dictionary::$dict[0x1000][0xxxx2] = array('US', ' 1 ', 'HuffmanTableSize', 'RET');

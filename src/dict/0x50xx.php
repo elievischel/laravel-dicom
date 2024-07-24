@@ -1,5 +1,6 @@
 <?php
-		// Group 0x50FF
+
+// Group 0x50FF
 //		Nanodicom_Dictionary::$dict[0x50xx][0x0005] = array('US', ' 1 ', 'CurveDimensions', 'RET');
 //		Nanodicom_Dictionary::$dict[0x50xx][0x0010] = array('US', ' 1 ', 'NumberOfPoints', 'RET');
 //		Nanodicom_Dictionary::$dict[0x50xx][0x0020] = array('CS', ' 1 ', 'TypeOfData', 'RET');
