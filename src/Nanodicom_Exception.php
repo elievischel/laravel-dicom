@@ -3,6 +3,8 @@
 namespace elievischel\laravelDicom;
 
 
+use Exception;
+
 /**
  * Nanodicom_Extension class.
  *

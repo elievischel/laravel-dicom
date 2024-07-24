@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
 
 // Group 0x2010
 Nanodicom_Dictionary::$dict[0x2010][0x0010] = array('ST', ' 1', 'ImageDisplayFormat');

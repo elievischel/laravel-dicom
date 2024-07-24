@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
 
 // Group 0x3008
 Nanodicom_Dictionary::$dict[0x3008][0x0010] = array('SQ', ' 1', 'MeasuredDoseReferenceSequence');

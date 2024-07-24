@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\Nanodicom_Dictionary;
+use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
 
 // Group 0x2120
 Nanodicom_Dictionary::$dict[0x2120][0x0010] = array('CS', ' 1 ', 'QueueStatus', 'RET');

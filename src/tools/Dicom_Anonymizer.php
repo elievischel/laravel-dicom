@@ -1,6 +1,8 @@
 <?php
 
-namespace elievischel\laravelDicom;
+namespace elievischel\laravelDicom\tools\tools\tools\tools\tools;
+
+use elievischel\laravelDicom\Nanodicom;
 
 /**
  * Dicom_Anonymizer class.
