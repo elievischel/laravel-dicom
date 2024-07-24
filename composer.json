@@ -18,7 +18,8 @@
             "elievischel\\laravelDicom\\": "src/"
         },
         "files": [
-            "src/Nanodicom.php"
+            "src/Nanodicom.php",
+            "src/Dicom_Simple.php"
         ]
     },
 
