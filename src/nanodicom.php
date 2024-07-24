@@ -3,7 +3,7 @@
 namespace elievischel\laravelDicom;
 
 // Set the full path to the current folder
-const NANODICOMROOT = "/";
+define("NANODICOMROOT", "");
 
 /**
  * abstract Nanodicom class.

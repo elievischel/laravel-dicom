@@ -1,9 +1,6 @@
 <?php
 
-namespace elievischel\laravelDicom\tools\tools\tools\tools;
-
-
-use elievischel\laravelDicom\Nanodicom;
+namespace elievischel\laravelDicom;
 
 /**
  * Dicom_Dumper class.

@@ -113,9 +113,9 @@ class Nanodicom_Dictionary
 
         // Let's load dictionary if it was not loaded yet
         if (!isset(self::$_loaded_dictionaries[$group])
-            and file_exists(NANODICOMROOT . DIRECTORY_SEPARATOR . 'nanodicom' . DIRECTORY_SEPARATOR . 'dict' . DIRECTORY_SEPARATOR . sprintf('0x%04X', $group) . '.php')) {
+            and file_exists(DIRECTORY_SEPARATOR . 'dict' . DIRECTORY_SEPARATOR . sprintf('0x%04X', $group) . '.php')) {
             // Load the dictionary
-            require_once(NANODICOMROOT . DIRECTORY_SEPARATOR . 'nanodicom' . DIRECTORY_SEPARATOR . 'dict' . DIRECTORY_SEPARATOR . sprintf('0x%04X', $group) . '.php');
+            require_once(DIRECTORY_SEPARATOR . 'dict' . DIRECTORY_SEPARATOR . sprintf('0x%04X', $group) . '.php');
 
             // Some dictionaries could be empty
             if (isset(Nanodicom_Dictionary::$dict[$group]) and count(Nanodicom_Dictionary::$dict[$group]) > 0) {

@@ -1,8 +1,6 @@
 <?php
 
-namespace elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer;
-
-use elievischel\laravelDicom\tools\tools\tools\tools\tools\Dicom_Anonymizer;
+namespace elievischel\laravelDicom;
 
 /**
  * Dicom_Anonymizer_Clinicaltrial class.

@@ -1081,13 +1081,9 @@ abstract class Nanodicom_Core
     {
         // Get the parts from the name
         $parts = explode('_', $name);
-
-        $directory = '/tools' . DIRECTORY_SEPARATOR;
-
         // Load all the needed files
         foreach ($parts as $part) {
-            require_once $directory . strtolower($part) . '.php';
-            $directory .= core . phpstrtolower($part) . DIRECTORY_SEPARATOR;
+            require_once DIRECTORY_SEPARATOR .  'Dicom_' . ucfirst($part)  . '.php';
         }
 
         // Add the Dicom prefix
