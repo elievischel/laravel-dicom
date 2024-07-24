@@ -1078,13 +1078,20 @@ abstract class Nanodicom_Core
      * @param string     type of data passed
      * @return  Dicom_tool A Tool
      */
-    public static function factory($location, $name = 'simple', $type = 'file')
+    public static function factory($location, $name = 'Simple', $type = 'file')
     {
         // Get the parts from the name
         $parts = explode('_', $name);
 
+
+        // Load all the needed files
+        foreach ($parts as $part)
+        {
+            require_once "Dicom_". ucfirst($part).'.php';
+        }
+
         // Add the Dicom prefix
-        $class = 'Dicom_' . $name;
+        $class = 'Dicom_'.$name;
 
         return new $class($location, $name, $type);
     }

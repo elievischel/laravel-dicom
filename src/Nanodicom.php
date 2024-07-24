@@ -16,3 +16,11 @@ namespace elievischel\laravelDicom;
 abstract class Nanodicom extends Nanodicom_Core
 {
 }
+
+
+if (!function_exists('Nanodicom')) {
+    function Nanodicom()
+    {
+        return app(\elievischel\laravelDicom\Nanodicom::class);
+    }
+}
