@@ -1,14 +1,6 @@
 <?php
-/**
- * tools/pixeler.php file
- *
- * @package    Nanodicom
- * @category   Tools
- * @author     Nano Documet <nanodocumet@gmail.com>
- * @version       1.3.1
- * @copyright  (c) 2010-2011
- * @license    http://www.opensource.org/licenses/mit-license.php MIT-license
- */
+
+namespace elievischel\laravelDicom;
 
 /**
  * Dicom_Pixeler class.
