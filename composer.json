@@ -10,10 +10,16 @@
             "email": "elie.vischel@gmail.com"
         }
     ],
+    "require": {
+        "php": "^8.0"
+    },
     "autoload": {
         "psr-4": {
-            "elievischel\\laravelDicom\\": "src/*"
-        }
+            "elievischel\\laravelDicom\\": "src/"
+        },
+        "files": [
+            "src/Nanodicom.php"
+        ]
     },
 
     "prefer-stable": true,
