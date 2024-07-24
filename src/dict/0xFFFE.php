@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
+use elievischel\laravelDicom\Nanodicom_Dictionary;
 
 // Group 0xFFFE
 // IT = Item

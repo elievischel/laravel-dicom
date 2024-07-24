@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
+use elievischel\laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0088
 Nanodicom_Dictionary::$dict[0x0088][0x0130] = array('SH', ' 1', 'StorageMediaFileSetID');

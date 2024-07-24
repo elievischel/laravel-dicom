@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
+use elievischel\laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x0032
 Nanodicom_Dictionary::$dict[0x0032][0x0000] = array('UL', '1', 'StudyGroupLength', 'RET');

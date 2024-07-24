@@ -1,6 +1,6 @@
 <?php
 
-use elievischel\laravelDicom\tools\tools\tools\tools\tools\tools\anonymizer\Nanodicom_Dictionary;
+use elievischel\laravelDicom\Nanodicom_Dictionary;
 
 // Group 0x2000
 Nanodicom_Dictionary::$dict[0x2000][0x0010] = array('IS', ' 1', 'NumberOfCopies');
