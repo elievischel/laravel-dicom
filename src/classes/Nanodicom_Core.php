@@ -2112,7 +2112,7 @@ abstract class Nanodicom_Core
     protected function _write_int_64($value, $bytes, $endian, $length, $sign = self::UNSIGNED)
     {
         if ($value == -1) {
-            return ($bytes == 2) ? core . phpchr(0xFF) . chr(0xFF) : chr(0xFF) . chr(0xFF) . chr(0xFF) . chr(0xFF);
+            return ($bytes == 2) ? core . phpchr(0xFF) . chr(0xFF) : Nanodicom_Core . phpchr(0xFF) . chr(0xFF) . chr(0xFF) . chr(0xFF);
         }
 
         return $this->_write_int_32($value, $bytes, $endian, $length, $sign);
